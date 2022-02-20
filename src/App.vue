@@ -1,21 +1,23 @@
 <template>
   <v-app>
     <v-main class="app">
-      <v-container class="container">
+      <v-container class="container1">
         <h1>Tarefas</h1>
         <hr />
         <br />
         <br />
         <v-row>
           <v-col cols="3">
-            <v-text-field label="Nome da tarefa"></v-text-field>
+            <v-text-field label="Nome"></v-text-field>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="9">
             <v-text-field label="Descrição"></v-text-field>
           </v-col>
-          <v-col cols="3">
-            <v-btn block color="#F25675" dark>Adicionar</v-btn>
-          </v-col>
+          <v-row>
+            <v-col cols="12">
+              <v-btn block color="#F25675" dark>Adicionar</v-btn>
+            </v-col>
+          </v-row>
         </v-row>
 
         <br />
@@ -74,8 +76,8 @@
   background-image: linear-gradient(#fc6c48 0%, #ef5081 100%);
 }
 .container {
-  width: 400px;
-  /* max-width: 100%; */
+  width: 500px;
+  max-width: 100%;
   min-height: 500px;
   margin: 20px auto 40px;
   border: 1px solid #eee;
