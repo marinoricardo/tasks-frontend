@@ -1,17 +1,17 @@
 <template>
   <v-app>
     <v-main class="app">
-      <v-container class="container">
+      <v-container class="container1">
         <h1>Tarefas</h1>
         <hr />
         <br />
         <br />
         <v-row>
           <v-col cols="3">
-            <v-text-field v-model="task.nome" label="Nome"></v-text-field>
+            <v-text-field v-model="task.nome" label="Nome" required></v-text-field>
           </v-col>
           <v-col cols="9">
-            <v-text-field v-model="task.descricao" label="Descrição"></v-text-field>
+            <v-text-field v-model="task.descricao" label="Descrição" required></v-text-field>
           </v-col>
           <v-row>
             <v-col cols="12">
@@ -71,7 +71,7 @@
   background-color: #fefefe;
   background-image: linear-gradient(#fc6c48 0%, #ef5081 100%);
 }
-.container {
+.container1 {
   width: 500px;
   /* max-width: 100%; */
   min-height: 500px;
